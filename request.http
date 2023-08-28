@@ -1,0 +1,58 @@
+POST http://localhost:5002/usuarios
+content-type: application/json
+
+{
+    "name": "Isabella",
+    "age": "17",
+    "email": "@isabella@isabella.com"
+}
+
+###
+
+GET http://localhost:5002/usuarios
+
+###
+
+POST http://localhost:5002/posts
+content-type: application/json
+
+{
+    "date": "07-25-2023" , 
+    "user": "Isabella",
+    "description": "Foto"
+        
+}
+
+###
+
+GET http://localhost:5002/posts
+ 
+###
+
+PUT http://localhost:5002/usuarios/7fd5c8a5-a145-4440-a270-f76379233fb9
+content-type: application/json
+
+{
+    "name": "Joana",
+    "age": "17",
+    "email": "@isabella@isabella.com"
+}
+
+###
+
+PUT http://localhost:5002/posts/6dce8e24-ede3-4b69-9006-b8a630138893
+content-type: application/json
+
+{
+    "date": "07-25-2023" , 
+    "user": "Isabella",
+    "description": "Vídeo"
+}
+
+###
+
+DELETE http://localhost:5002/usuarios/21936f65-ba8d-4bd4-9c17-8d7ab0ff8bc1
+
+###
+
+DELETE http://localhost:5002/posts/be508a9d-3d25-4783-97bd-6a541f7bff17
